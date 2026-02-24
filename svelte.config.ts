@@ -7,17 +7,10 @@ const config = {
 
     kit: {
         adapter: adapter({
-            // Optional: specify runtime version
-            runtime: 'nodejs20.x',
-            // Ensure proper output structure
-            out: '.svelte-kit/vercel'
+            runtime: 'nodejs20.x'
         }),
         csrf: {
             trustedOrigins: ['*']
-        },
-        // Ensure static assets are copied
-        files: {
-            assets: 'static'
         }
     },
     vitePlugin: {
